@@ -4,7 +4,11 @@ project(xyz VERSION 0.1.0)
 include(CTest)
 enable_testing()
 
-add_library(xyz xyz.cpp)
+message(STATUS "PPPPPPPPPPPPPPP")
+message(STATUS "XYZ_NAME=${XYZ_NAME}")
+message(STATUS "PPPPPPPPPPPPPPP")
+
+add_library(${XYZ_NAME}xyz xyz.cpp)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
